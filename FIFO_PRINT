@@ -1,0 +1,12 @@
+Algorithm FIFO_PRINT
+  Initialize queue
+  while มีงานพิมพ์
+    รับคำสั่ง
+    if SUBMIT job: enqueue(job)
+    if PRINT:
+      while queue ไม่ว่าง
+        job = dequeue()
+        ประมวลผลการพิมพ์(job)
+    if CANCEL job: ลบ job จากตำแหน่งปัจจุบัน
+    if PEEK: แสดงงานแรก
+    if DISPLAY: แสดงทั้งคิว
