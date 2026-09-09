@@ -1,0 +1,12 @@
+Algorithm SJF_PRINT
+  Initialize priority_queue (เรียงตามจำนวนหน้า น้อย→มาก)
+  while มีงานพิมพ์
+    รับคำสั่ง
+    if SUBMIT job: add(job)
+    if PRINT:
+      while queue ไม่ว่าง
+        job = poll() // ดึงงานหน้าน้อยสุด
+        ประมวลผลการพิมพ์(job)
+    if CANCEL: ลบ job
+    if PEEK: แสดงงานที่มีหน้าน้อยสุด
+    if DISPLAY: แสดงทั้งคิว
